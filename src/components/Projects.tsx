@@ -109,6 +109,8 @@ export default function Projects() {
               </span>
             ))}
           </div>
+        </motion.div>
+        
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -136,6 +138,16 @@ export default function Projects() {
               <p className="text-white/70 italic mb-2">Janapriya Multiple Campus, Pokhara</p>
               <div className="flex items-center gap-4">
                 <span className="text-white/50 bg-white/5 px-3 py-1 rounded-full text-sm">GPA: 2.34</span>
+              </div>
+            </div>
+            <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="flex flex-col md:flex-row justify-between mb-4">
+                <h3 className="text-2xl font-bold text-white">SEE (NEB)</h3>
+                <span className="text-white/50 font-mono">2017</span>
+              </div>
+              <p className="text-white/70 italic mb-2">Bright Future English School, Belchautara</p>
+              <div className="flex items-center gap-4">
+                <span className="text-white/50 bg-white/5 px-3 py-1 rounded-full text-sm">GPA: 3.40</span>
               </div>
             </div>
           </div>
