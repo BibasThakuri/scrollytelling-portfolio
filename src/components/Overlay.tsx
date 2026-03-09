@@ -31,9 +31,18 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
         <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-4">
           Bibas Malla Thakuri
         </h1>
-        <p className="text-xl md:text-2xl text-white/70 font-light tracking-wide uppercase">
+        <p className="text-xl md:text-2xl text-white/70 font-light tracking-wide uppercase mb-8">
           IT Admin Supervisor
         </p>
+        <motion.a
+          href="/cv.pdf"
+          download
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          className="pointer-events-auto px-8 py-4 bg-white text-black font-bold rounded-full transition-colors hover:bg-white/90"
+        >
+          Download CV
+        </motion.a>
       </motion.div>
 
       {/* Section 2 (30% scroll) */}
