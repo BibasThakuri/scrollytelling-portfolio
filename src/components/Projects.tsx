@@ -5,18 +5,29 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Dohoro Management",
-    role: "IT Admin Supervisor",
-    period: "September 2023 - May 2025",
-    description: "Generated detailed reports using IT tools. Tested in-house software and ensured smooth deployment. Provided technical support to admin teams and resolved system issues. Ensured IT security compliance and optimized workflows.",
+    title: "Dohoro Management Pvt. Ltd.",
+    role: "Project Manager / Supervisor",
+    period: "September 2023 - June 2025",
+    description: "Designed and developed the Dohoro website, optimizing user experience. Collaborated on WorkplanX, a project management tool. Enhanced data visualization using Power BI and supervised administrative teams.",
+    bullets: [
+      "Designed and developed the Dohoro website, optimizing user experience and functionality.",
+      "Collaborated on development of WorkplanX project management tool.",
+      "Enhanced data visualization using Power BI to drive data-driven decisions.",
+      "Supervised the administrative team and oversaw project management."
+    ],
     color: "from-blue-500/20 to-purple-500/20",
     link: "https://www.dohoro.com/",
   },
   {
-    title: "XDezo",
+    title: "XDezo Pvt. Ltd.",
     role: "Intern - Web Development",
     period: "February 2023 - July 2023",
-    description: "Built dynamic front-end components and maintained responsive client websites. Conducted code reviews and debugging for high-quality outputs.",
+    description: "Contributed to dynamic front-end components for client projects and supported the team in creating responsive designs. Participated in code reviews to ensure quality.",
+    bullets: [
+      "Contributed to the development of dynamic front-end components for client projects.",
+      "Supported the team in creating responsive designs and maintaining client websites.",
+      "Participated in code reviews and debugging to ensure high-quality outputs."
+    ],
     color: "from-emerald-500/20 to-teal-500/20",
     link: "https://xdezo.com.np/",
   },
@@ -24,7 +35,10 @@ const projects = [
 
 const skills = [
   "HTML", "CSS", "JavaScript", "React.js", "Node.js", "Laravel",
-  "Tailwind / Bootstrap", "Power BI", "Jira", "Trello"
+  "Tailwind", "Bootstrap", "SCSS", "REST APIs",
+  "Power BI", "Zoho Analytics", "MS Excel",
+  "Jira", "Trello", "Monday.com",
+  "Problem-solving", "Team Leadership", "Communication"
 ];
 
 export default function Projects() {
@@ -64,8 +78,15 @@ export default function Projects() {
                   </svg>
                 </div>
                 <h3 className="text-3xl font-bold text-white mb-2">{project.title}</h3>
-                <h4 className="text-lg text-white/80 mb-6 font-medium">{project.role}</h4>
-                <p className="text-white/60 leading-relaxed mt-auto">{project.description}</p>
+                <h4 className="text-lg text-white/80 mb-4 font-medium">{project.role}</h4>
+                <ul className="space-y-2 mt-auto">
+                  {project.bullets.map((bullet, i) => (
+                    <li key={i} className="text-white/60 text-sm flex items-start">
+                      <span className="text-white/30 mr-2 mt-1.5">•</span>
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </motion.a>
           ))}
@@ -87,6 +108,36 @@ export default function Projects() {
                 {skill}
               </span>
             ))}
+          </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="mt-32"
+        >
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">Education</h2>
+          <div className="space-y-8">
+            <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="flex flex-col md:flex-row justify-between mb-4">
+                <h3 className="text-2xl font-bold text-white">Bachelor of Science in Information Technology</h3>
+                <span className="text-white/50 font-mono">2021 - 2024</span>
+              </div>
+              <p className="text-white/70 italic mb-2">Infomax College of BSc IT and Management (Asia Pacific University)</p>
+              <div className="flex items-center gap-4">
+                <span className="text-white/50 bg-white/5 px-3 py-1 rounded-full text-sm">GPA: 3.09</span>
+              </div>
+            </div>
+            <div className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="flex flex-col md:flex-row justify-between mb-4">
+                <h3 className="text-2xl font-bold text-white">+2 in Science (NEB)</h3>
+                <span className="text-white/50 font-mono">2018 - 2020</span>
+              </div>
+              <p className="text-white/70 italic mb-2">Janapriya Multiple Campus, Pokhara</p>
+              <div className="flex items-center gap-4">
+                <span className="text-white/50 bg-white/5 px-3 py-1 rounded-full text-sm">GPA: 2.34</span>
+              </div>
+            </div>
           </div>
         </motion.div>
       </div>

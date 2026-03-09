@@ -67,11 +67,11 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
           </h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-2xl font-semibold text-white/90">Dohoro Management</h3>
-              <p className="text-lg text-white/60">IT Admin Supervisor</p>
+              <h3 className="text-2xl font-semibold text-white/90 underline decoration-white/20 underline-offset-8 mb-4">Dohoro Management</h3>
+              <p className="text-lg text-white/60">Project Manager / Supervisor</p>
             </div>
             <div>
-              <h3 className="text-2xl font-semibold text-white/90">XDezo</h3>
+              <h3 className="text-2xl font-semibold text-white/90 underline decoration-white/20 underline-offset-8 mb-4">XDezo Pvt. Ltd.</h3>
               <p className="text-lg text-white/60">Web Development Intern</p>
             </div>
           </div>
