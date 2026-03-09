@@ -13,7 +13,7 @@ const projects = [
       "Designed and developed the Dohoro website, optimizing user experience and functionality.",
       "Collaborated on development of WorkplanX project management tool.",
       "Enhanced data visualization using Power BI to drive data-driven decisions.",
-      "Supervised the administrative team and oversaw IT operations and technical administration."
+      "Supervised the administrative team and oversaw project management and technical administration."
     ],
     color: "from-blue-500/20 to-purple-500/20",
     link: "https://www.dohoro.com/",
