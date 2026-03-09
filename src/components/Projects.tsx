@@ -6,12 +6,12 @@ import { motion } from "framer-motion";
 const projects = [
   {
     title: "Dohoro Management Pvt. Ltd.",
-    role: "IT Admin",
+    role: "IT Admin Supervisor",
     period: "September 2023 - June 2025",
-    description: "Designed and developed the Dohoro website, optimizing user experience. Collaborated on WorkplanX, an IT administration tool. Enhanced data visualization using Power BI and supervised administrative teams.",
+    description: "Designed and developed the Dohoro website, optimizing user experience. Collaborated on WorkplanX, a project management tool. Enhanced data visualization using Power BI and supervised administrative teams.",
     bullets: [
       "Designed and developed the Dohoro website, optimizing user experience and functionality.",
-      "Collaborated on development of WorkplanX IT administration tool.",
+      "Collaborated on development of WorkplanX project management tool.",
       "Enhanced data visualization using Power BI to drive data-driven decisions.",
       "Supervised the administrative team and oversaw IT operations and technical administration."
     ],
