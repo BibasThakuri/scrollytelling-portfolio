@@ -1,0 +1,9 @@
+name = "portfolio"
+compatibility_date = "2024-04-03"
+compatibility_flags = ["nodejs_compat"]
+
+[site]
+bucket = ".vercel/output/static"
+
+[vars]
+NEXT_TELEMETRY_DISABLED = "1"
