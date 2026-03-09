@@ -8,7 +8,7 @@ export default function Home() {
       <Projects />
       
       <footer className="text-center py-10 text-white/40 text-sm">
-        © {new Date().getFullYear()} Bibas Malla Thakuri. Creative Developer.
+        © {new Date().getFullYear()} Bibas Malla Thakuri. IT Admin Supervisor & Creative Developer.
       </footer>
     </main>
   );

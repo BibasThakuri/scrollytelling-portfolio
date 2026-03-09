@@ -13,8 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bibas Malla Thakuri",
-  description: "IT Admin Supervisor & Developer Portfolio",
+  title: "Bibas Malla Thakuri | IT Admin Supervisor & Creative Developer",
+  description: "Official portfolio of Bibas Malla Thakuri, an IT Admin Supervisor and creative developer with expertise in IT management and web development.",
+  keywords: [
+    "Bibas Malla Thakuri",
+    "IT Admin Supervisor",
+    "IT Management",
+    "Web Developer",
+    "Dohoro Management",
+    "Pokhara",
+    "Nepal",
+    "Creative Developer",
+    "Portfolio"
+  ],
+  authors: [{ name: "Bibas Malla Thakuri" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://bibasmallathakuri.com.np/", // Adjust if you have a specific URL
+    title: "Bibas Malla Thakuri | IT Admin Supervisor & Creative Developer",
+    description: "Official portfolio of Bibas Malla Thakuri, an IT Admin Supervisor and creative developer.",
+    siteName: "Bibas Malla Thakuri Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bibas Malla Thakuri | IT Admin Supervisor & Creative Developer",
+    description: "Official portfolio of Bibas Malla Thakuri, an IT Admin Supervisor and creative developer.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
