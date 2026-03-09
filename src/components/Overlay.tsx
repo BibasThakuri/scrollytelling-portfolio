@@ -32,7 +32,7 @@ export default function Overlay({ scrollYProgress }: { scrollYProgress: MotionVa
           Bibas Malla Thakuri
         </h1>
         <p className="text-xl md:text-2xl text-white/70 font-light tracking-wide uppercase mb-8">
-          IT Admin Supervisor
+          IT Admin
         </p>
         <motion.a
           href="/cv.pdf"
